@@ -74,10 +74,30 @@ class _MyHomePageState extends State<MyHomePage> {
                       textAlign: TextAlign.start,
                       style: TextStyle(color: Colors.white, fontSize: 24),
                     ),
+                    Text(
+                      'Маркет плейс',
+                      textAlign: TextAlign.start,
+                      style: TextStyle(color: Colors.white, fontSize: 24),
+                    ),
                   ],
                 ),
               ),
             ],
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Max.kg",
+                  style: TextStyle(
+                      fontSize: 24,
+                      color: MyColors.red,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
           ),
         ],
       ),
