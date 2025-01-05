@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:rafael_project/style.dart';
@@ -114,7 +115,23 @@ class _MyHomePageState extends State<MyHomePage> {
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(60),
                         topRight: Radius.circular(60)),
-                    child: Image.asset('assets/max.png'))
+                    child: Image.asset('assets/max.png')),
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                        child: buttonAppStore(
+                            title: "App Store", onPressed: () {})),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Expanded(
+                        child: buttonAppStore(
+                            title: "Google Play", onPressed: () {})),
+                  ],
+                ),
               ],
             ),
           ),
@@ -127,4 +144,15 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+}
+
+Widget buttonAppStore({required String title, required Function() onPressed}) {
+  return CupertinoButton(
+      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      color: MyColors.appBar,
+      child: Text(
+        '${title}',
+        style: TextStyle(color: Colors.white),
+      ),
+      onPressed: onPressed);
 }
