@@ -74,11 +74,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       textAlign: TextAlign.start,
                       style: TextStyle(color: Colors.white, fontSize: 24),
                     ),
-                    Text(
-                      'Маркет плейс',
-                      textAlign: TextAlign.start,
-                      style: TextStyle(color: Colors.white, fontSize: 24),
-                    ),
                   ],
                 ),
               ),
@@ -92,10 +87,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 Text(
                   "Max.kg",
                   style: TextStyle(
+                      height: 1.0,
                       fontSize: 24,
                       color: MyColors.red,
                       fontWeight: FontWeight.bold),
-                )
+                ),
+                Text(
+                  'Маркет плейс',
+                  textAlign: TextAlign.start,
+                  style: TextStyle(color: Colors.white, fontSize: 24),
+                ),
+                Text(
+                  'Приложение для ios и android полностью с 0 писал сам. Покупки через Paybox',
+                  textAlign: TextAlign.start,
+                  style: TextStyle(color: MyColors.text, fontSize: 24),
+                ),
               ],
             ),
           ),
