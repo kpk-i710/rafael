@@ -44,35 +44,40 @@ class _MyHomePageState extends State<MyHomePage> {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: Stack(
+      body: ListView(
+        // physics: FixedExtentScrollPhysics(),
         children: [
-          SvgPicture.asset(
-            'assets/back.svg',
-            width: MediaQuery.sizeOf(context).width,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                SizedBox(
-                  height: 50,
+          Stack(
+            children: [
+              SvgPicture.asset(
+                'assets/back.svg',
+                width: MediaQuery.sizeOf(context).width,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    SizedBox(
+                      height: 50,
+                    ),
+                    Text(
+                      'Rafael',
+                      textAlign: TextAlign.start,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 34,
+                      ),
+                    ),
+                    Text(
+                      'Flutter разработчик',
+                      textAlign: TextAlign.start,
+                      style: TextStyle(color: Colors.white, fontSize: 24),
+                    ),
+                  ],
                 ),
-                Text(
-                  'Rafael',
-                  textAlign: TextAlign.start,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 34,
-                  ),
-                ),
-                Text(
-                  'Flutter разработчик',
-                  textAlign: TextAlign.start,
-                  style: TextStyle(color: Colors.white, fontSize: 24),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ],
       ),
