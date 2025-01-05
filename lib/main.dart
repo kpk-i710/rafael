@@ -108,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(color: MyColors.text, fontSize: 24),
                 ),
                 SizedBox(
-                  height: 5,
+                  height: 20,
                 ),
                 ClipRRect(
                     borderRadius: BorderRadius.only(
