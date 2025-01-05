@@ -85,23 +85,36 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Max.kg",
+                  "Max.kg.",
                   style: TextStyle(
-                      height: 1.0,
                       fontSize: 24,
                       color: MyColors.red,
                       fontWeight: FontWeight.bold),
                 ),
+                SizedBox(
+                  height: 5,
+                ),
                 Text(
-                  'Маркет плейс',
+                  'Маркетплейс.',
                   textAlign: TextAlign.start,
-                  style: TextStyle(color: Colors.white, fontSize: 24),
+                  style: TextStyle(color: MyColors.text, fontSize: 24),
+                ),
+                SizedBox(
+                  height: 5,
                 ),
                 Text(
                   'Приложение для ios и android полностью с 0 писал сам. Покупки через Paybox',
                   textAlign: TextAlign.start,
                   style: TextStyle(color: MyColors.text, fontSize: 24),
                 ),
+                SizedBox(
+                  height: 5,
+                ),
+                ClipRRect(
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(60),
+                        topRight: Radius.circular(60)),
+                    child: Image.asset('assets/max.png'))
               ],
             ),
           ),
